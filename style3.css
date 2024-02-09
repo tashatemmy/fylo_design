@@ -1,0 +1,399 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+}
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+body {
+    background: hsl(218, 28%, 13%);
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	color: white;
+}
+header {
+    font-family: "Raleway", sans-serif;
+	color: white;
+	width: 90vw;
+	margin: 0 auto;
+	display: grid;
+	padding-top: 1rem;
+	grid-template-columns: 60px 200px;
+	justify-content: space-between;
+
+
+}
+.navbar {
+	margin-top: 10px;
+	max-width: 200px;
+}
+
+.logo {
+	width: 100px;
+	margin-top: 10px;
+
+	
+}
+ul {
+	list-style-type: none;
+}
+.navbar a {
+	text-decoration: none;
+	color: white;
+	font-size: 10px;
+	padding-right: 8px;
+}
+.note {
+	padding-top: 2rem;
+	width: 90vw;
+	display: grid;
+	margin: 0 auto;
+	justify-content: center;
+	color: white;
+}
+.img {
+	max-width: 500px;
+}
+.info {
+	max-width: 500px;
+	letter-spacing: 2px;
+	text-align: center;
+	line-height: 1.8;
+
+
+}
+.get {
+	margin: auto;
+	text-align: center;
+	width: 300px;
+	background-image: linear-gradient( to right,hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+	padding: 20px 20px;
+	border-radius: 30px;
+	font-size: 20px;
+}
+@media only screen and (max-width: 375px) {
+	.info {
+		font-size: 30px;
+	}
+	
+}
+.details {
+	padding-left: 20px;
+	margin: 4rem auto;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(250px, 300px));
+	grid-template-rows: 1fr 1fr;
+	width: 90vw;
+	color: white;
+	justify-content: center;
+	place-items: center;
+}
+.icon {
+	position: relative;
+	left: 30%;	
+	width: 50px;
+	height: 50px;
+
+}
+.set {
+	align-items: center;
+	padding-top: 20px;
+}
+.one {
+	font-size: small;
+	text-align: center;
+	max-width: 250px;
+}
+.two {
+	font-weight: lighter;
+	text-align: center;
+	max-width: 230px;
+	font-size: small;
+}
+@media only screen and (max-width: 500px) {
+	.details {
+	grid-template-columns: none;
+	width: 90vw; 
+	justify-content: center;
+
+	}
+	.icon {
+		width: 100px;
+		height: 100px;
+	}
+	.one, .two {
+		font-size: large;
+		max-width: 300px;
+	}
+}
+.content {
+	width: 90vw;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 45% 45%;
+	justify-content: center;
+	column-gap: 5%;
+	color: white;
+}
+.know {
+	grid-column: 1/2;
+
+}
+#stay {
+	max-width: 400px;
+}
+.stay {
+	max-width: 200px;
+	letter-spacing: 2px;
+	line-height: 1.4;
+
+}
+.see-how {
+	position: relative;
+	color: hsl(176, 68%, 64%);
+	width: 170px;
+}
+.span {
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	width: 20px;
+	height: 20px;
+	padding-bottom: 2px;
+}
+.underline {
+	width: 180px;
+	height: 2px;
+	background: hsl(176, 68%, 64%);
+	margin-top: -12px;
+
+}
+@media only screen and (max-width: 600px) {
+	.content {
+		grid-template-columns: none;
+	}
+	#stay {
+		max-width: 400px;
+	}
+	.stay {
+		max-width: 400px;
+	}
+	.know {
+		max-width: 500px;
+	}
+}
+.tweet {
+	width: 85vw;
+	margin: 6rem auto;
+	display: grid;
+	justify-content: center;
+}
+.tweets {
+	background: hsl(219, 30%, 18%);
+	display: grid;
+	color: white;
+	max-width: 420px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.tweets > p {
+	padding: 20px 40px;
+	width: 400px;
+	font-weight: lighter;
+	font-size: 15px;
+	line-height: 1.6;
+}
+.tweet-1 {
+	display: grid;
+	grid-template-columns: 90px 1fr;
+	padding-bottom: 20px;
+}
+.tweet-img {
+	margin-left: 40px;
+	height: 30px;
+	width: 30px;
+	border-radius: 50px;
+
+}
+.tweet-2 {
+	font-size: smaller;
+	margin-top: -20px;
+}
+.tweet-2 p {
+	margin-top: -10px;
+}
+.tweets > img {
+	height: 40px;
+	 width: 40px; 
+	 position: absolute; 
+	 top: -14%; 
+	 left: -1%; 
+	 z-index: -1;
+}
+@media only screen and (min-width:750px) {
+	.tweet {
+		width: 95vw;
+		grid-template-columns: repeat(3, 31%);
+		column-gap: 10px;
+		justify-content: center;
+	}
+	.tweets {
+		max-width: 350px;
+		justify-content: center;
+	}
+	.tweets > p{
+		padding: 20px 20px;
+		width: 250px;
+		max-width: 300px;
+	}
+	.tweet-img {
+		margin-left: 20px;
+		object-fit: contain;
+	}
+	.tweet-1 {
+		grid-template-columns: 60px 1fr;
+	}
+	.tweets > img {
+		top: -10%;
+		left: -2%;
+	}
+}
+.form-footer {
+	position: relative;;
+}
+.card {
+	width: 90vw;
+	background: hsl(217, 28%, 15%);
+	margin: 6rem auto;
+	display: grid;
+	justify-content: center;
+	border-radius: 5px;
+}
+.card-text {
+	text-align: center;
+	font-weight: lighter;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+}
+.card-text p {
+	/* width: 300px; */
+	max-width: 400px;
+	letter-spacing: 1px;
+	line-height: 1.4;
+}
+.card-form {
+	max-width: 400px;
+	padding-bottom: 2rem;
+}
+#input-email {
+	background: white;
+	color: lightgray;
+	border-radius: 25px;
+	padding: 20px 20px;
+	border: none;
+
+}
+.form-button {
+	background: hsl(176, 68%, 64%);
+	padding: 20px;
+	border-radius: 25px;
+	text-align: center;
+	cursor: pointer;
+}
+@media screen and (min-width:600px) {
+	.card {
+		max-width: 700px;
+	}
+	.card-form {
+		max-width: 600px;
+		display: grid;
+		grid-template-columns: 60% 30%;
+		column-gap: 12px;
+		justify-content: center;
+	}
+	.card-text p {
+		max-width: 600px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin: 0 auto;
+	}
+	.form-button {
+		font-size: 12px;
+		margin-top: 0;
+	}
+	
+}
+footer {
+	position: absolute;
+	top: 50%;
+	background: hsl(216, 53%, 9%);
+	padding-top: 16rem;
+	z-index: -1;
+	width: 100vw;
+}
+footer img {
+	display: block;
+	margin: 0 55px;
+	width: 100px;
+	height: 70px;
+	object-fit: contain;
+
+}
+.address {
+	margin: 0 auto;
+	width: 90vw;
+	font-size: 12px;
+}
+.two-2 {
+	padding-left: 30px;
+	display: flex;
+	max-width: 500px;
+	position: relative;
+	font-size: 20px;
+	line-height: 1.4;
+
+}
+#icon {
+	font-size: 18px;
+	position: absolute;
+	right: 5px;	
+}
+.grid {
+	padding: 40px 0;
+}
+.grid a {
+	display: inline-block;
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	padding: 10px 0;
+
+}
+@media screen and (min-width: 600px) {
+	.address {
+		display: flex;
+		justify-content: space-between;
+
+	}
+	.two-2 {
+		/* width: 250px; */
+		padding-right:  40px;
+		max-width: 400px;
+	}
+	.one-1 {
+		max-width: 250px;
+	}
+	.grid {
+		padding: 15px 0;
+		max-width: 200px;
+	}
+}
